@@ -145,7 +145,7 @@ namespace FI.AtividadeEntrevista.DAL
             List<DML.Cliente> lista = new List<DML.Cliente>();
             if (ds != null && ds.Tables != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
             {
-                foreach (DataRow row in ds.Tables[0].Rows)
+                foreach (DataRow row in ds.Tables[0].Rows) 
                 {
                     DML.Cliente cli = new DML.Cliente();
                     cli.Id = row.Field<long>("Id");
